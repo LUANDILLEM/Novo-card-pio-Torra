@@ -1,0 +1,165 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  align-items: center;
+  background-image: url(/back.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+main {
+  background-color: rgba(170, 170, 170, 0.45);
+  backdrop-filter: blur(0.2px);
+  border-radius: 16px;
+  width: 520px;
+  margin: 32px auto;
+  padding: 15px;
+  border: 1px solid rgba(170, 170, 170, 0.45);
+}
+
+/* ####################### header ######### */
+
+.logo{
+  padding: 20px 0;
+}
+
+header {
+  align-items: center;
+  padding-bottom: 32px;
+  margin-top: 30px;
+}
+
+h1 {
+  font-family: 'Roboto Serif';
+  font-size: 28px;
+  line-height: 33px;
+
+  color: #2d2c2a;
+  text-transform: uppercase;
+}
+
+header p {
+  text-align: center;
+  font-size: 14px;
+}
+
+span {
+  color: rgba(153, 80, 0, 1);
+}
+
+/* ###################### Brunch #########*/
+section,
+header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  max-width: 500px;
+
+  margin: 0px auto;
+}
+.details {
+  align-items: center;
+  gap: 24px;
+}
+
+.details h2 {
+  background: #c6bcae;
+  text-align: center;
+  margin-bottom: 24px;
+  border-radius: 5px;
+}
+
+.details ul {
+  display: grid;
+  grid-template-areas:
+    'subtitle price'
+    'paragraph paragraph';
+}
+
+li {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 16px;
+  padding-left: 20px;
+}
+
+.details p {
+  font-family: 'Roboto';
+  font-size: 14px;
+  line-height: 21px;
+
+  color: rgba(0, 0, 0, 0.9);
+
+  width: 240px;
+  height: 63px;
+}
+
+.excecao {
+  margin-bottom: 20px;
+}
+strong {
+  font-family: 'Roboto Serif';
+  color: #2d2c2a;
+  text-align: center;
+  padding-left: 20px;
+}
+
+/* ##################  footer  ###################### */
+
+footer {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 100px;
+
+  background-color: #fed7aa;
+}
+.icon {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  vertical-align: middle;
+}
+
+.social-links-icon {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.direitos-autorais a {
+  color: #2d2c2a;
+  text-decoration: none;
+}
+
+.direitos-autorais {
+  padding-right: 10px;
+}
+
+@media only screen and (max-device-width: 505px) {
+  .social-links,
+  .social-links-icon {
+    width: 0;
+  }
+
+  .social-links ul {
+    display: flex;
+    max-width: 50px;
+  }
+
+  .social-links-icon {
+    padding-left: 5px;
+    padding-right: 10px;
+  }
+
+  .direitos-autorais {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin: 0 50px;
+    padding-left: 20px;
+  }
+}
